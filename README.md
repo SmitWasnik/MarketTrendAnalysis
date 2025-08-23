@@ -31,7 +31,7 @@ It was developed and tested in **Google Colab**, and the code is now hosted on G
 1. Clone this repository:
    ```bash
    git clone https://github.com/SmitWasnik/MarketTrendAnalysis.git
-   cd your-repo-name
+   cd MarketTrendAnalysis
    ```
 2. Install required dependencies:
    ```bash
