@@ -1,22 +1,25 @@
-# Linear Regression Prediction Model
+# Random Forest Regressor Prediction Model
 
-This project implements a **Linear Regression Model** to make predictions based on input data.  
+This project implements a **Random Forest Regressor Model** to predict stock market trends based on historical stock price data.  
 It was developed and tested in **Google Colab**, and the code is now hosted on GitHub.
 
 ---
 
 ## 📌 Project Overview
-- Uses **Linear Regression** for prediction tasks.  
-- Built in **Python**.  
+- Uses **Random Forest Regressor** for prediction tasks.  
+- Data is fetched directly from **Yahoo Finance (`yfinance`)**.  
+- Built in **Python** with libraries such as `pandas`, `numpy`, `yfinance`, `scikit-learn`, and `matplotlib`.  
 - Runs on **Google Colab** and can also run locally.  
-- Simple and beginner-friendly implementation.
+- Beginner-friendly implementation for stock trend prediction.
 
 ---
 
 ## ⚙️ How It Works
-1. Data is preprocessed and cleaned.  
-2. The **Linear Regression model** from `sklearn.linear_model` is trained on the dataset.  
-3. The model makes predictions for given inputs.  
+1. **Data Fetching**: Stock price data is fetched using the `yfinance` library.  
+2. **Data Preprocessing**: The data is cleaned and organized into features (X) and target values (y).  
+3. **Model Training**: A **RandomForestRegressor** model from `sklearn.ensemble` is trained on the dataset.  
+4. **Prediction**: The trained model predicts stock prices for given input features.  
+5. **Visualization**: Actual vs Predicted values are plotted using `matplotlib` for easy comparison.
 
 ---
 
@@ -45,9 +48,14 @@ It was developed and tested in **Google Colab**, and the code is now hosted on G
 After training, the model predicts values for the given input dataset. Example:
 
 ```
-Input: [X values]
-Predicted Output: [Y values]
+Input: Stock Price Features (X)
+Predicted Output: Future Stock Prices (Y)
 ```
+
+A sample visualization:
+
+- **Blue Line** → Actual Stock Prices  
+- **Red Line** → Predicted Stock Prices  
 
 ---
 
@@ -64,5 +72,3 @@ project-folder/
 ## 🧑‍💻 Author
 - **Smit Wasnik**  
 Pursuing *Minor in AI (IIT Ropar)* | Mechanical Design Engineer  
-
----
